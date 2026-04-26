@@ -1,0 +1,14 @@
+{
+  "name": "sudoku-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "dev": "vite",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^5.0.0",
+    "vitest": "^2.0.0"
+  }
+}

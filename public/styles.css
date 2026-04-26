@@ -1,0 +1,74 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(9, 2.5rem);
+  grid-template-rows: repeat(9, 2.5rem);
+  gap: 2px;
+}
+
+.cell {
+  position: relative;
+}
+
+.cell input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #444;
+  background: #222;
+  color: #eee;
+}
+
+.cell.fixed input {
+  background: #333;
+  font-weight: bold;
+}
+
+.cell.conflict input {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.cell.selected input {
+  outline: 2px solid #ffd700;
+}
+
+.cell.highlight-row input,
+.cell.highlight-col input {
+  background: #2a2a2a;
+}
+
+.notes {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0.6rem;
+  color: #888;
+  pointer-events: none;
+}
+
+.notes span {
+  text-align: center;
+  line-height: 1.2;
+}
+
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#message {
+  min-height: 1.5rem;
+}
