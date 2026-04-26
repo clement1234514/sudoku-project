@@ -90,5 +90,5 @@ sudoku-project/
 │
 ├── package.json               # Scripts: build, dev, test
 ├── tsconfig.json              # TypeScript-Konfiguration
-└── vite.config.js (optional)  # Falls später Vite-Build genutzt wird
+└── vite.config.js (optional)  
 
