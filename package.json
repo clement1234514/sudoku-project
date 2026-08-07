@@ -2,11 +2,14 @@
   "name": "sudoku-project",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --noEmit && vite build",
     "dev": "vite",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0",
     "typescript": "^5.9.3",
     "vite": "^5.0.0",
     "vitest": "^2.0.0"

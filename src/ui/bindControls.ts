@@ -22,10 +22,10 @@ export function bindControls() {
 
   const noteBtn = document.getElementById("noteModeBtn")!;
 
-noteBtn.addEventListener("click", () => {
-  game.toggleNoteMode();
-  noteBtn.textContent = game.noteMode ? "Notizen: AN" : "Notizen: AUS";
-});
+  noteBtn.addEventListener("click", () => {
+    game.toggleNoteMode();
+    noteBtn.textContent = game.noteMode ? "Notizen: AN" : "Notizen: AUS";
+  });
 
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {

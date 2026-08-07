@@ -32,8 +32,8 @@ export class SudokuGame {
   }
 
   toggleNoteMode() {
-  this.noteMode = !this.noteMode;
-}
+    this.noteMode = !this.noteMode;
+  }
 
   getNotes(pos: Position): number[] {
     return this.notes.getNotes(pos);
@@ -41,6 +41,10 @@ export class SudokuGame {
 
   getConflicts(): Position[] {
     return findConflicts(this.getGrid());
+  }
+
+  isComplete(): boolean {
+    return this.grid.isComplete();
   }
 
   isSolved(): boolean {
