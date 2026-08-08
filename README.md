@@ -53,6 +53,8 @@ Getestet werden:
 
 ## Deployment (Vercel)
 
+**Live-Demo:** https://sudoku-project-black.vercel.app
+
 Das Repository ist für einen Static-Site-Deploy auf **Vercel** konfiguriert:
 
 1. Vercel öffnen → **New Project** → dieses Repository importieren
